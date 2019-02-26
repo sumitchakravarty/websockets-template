@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WebSocket Template</title>
+    <meta name="description" content="WebSocketTemplate">
+    <meta name="author" content="Sumit Chakravarty (https://github.com/sumitchakravarty)">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <script src="browser-client.js"></script>
+</head>
+<body>
+    <h1>WebSocket Template</h1>
+    <div id="connectToServer">
+        Name: <textarea id="name" rows="1" cols="10"></textarea>
+        <button onclick="connectToWebsocketServer()">Connect to Websocket Server</button>
+    </div>
+    <br/>
+    <div id="sendMessage" style="display: none;">
+        Message ID: <textarea id="msg_id" rows="1" cols="10"></textarea>
+        <br/>
+        Message Data: <textarea id="msg_data" rows="1" cols="10"></textarea>
+        <br/>
+        <button onclick="sendSocketMessage()">Send Message</button>
+    </div>
+    <br/>
+    <div>
+        <textarea id="serverResponse" rows="10" cols="50">server response here</textarea>
+    </div>
+</body>
+</html>
+
